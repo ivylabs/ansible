@@ -1,0 +1,11 @@
+# Without ansible.cfg
+
+ansible all --key-file ~/.ssh/ansible -i inventory -m ping --user root
+
+# Using ansible.cfg
+
+ansible all -m ping --user root
+
+ansible all --list-hosts --user root
+
+ansible all -m gather_facts --user root
